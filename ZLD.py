@@ -1509,7 +1509,13 @@ st.markdown("""
     background: linear-gradient(135deg, #E2E8F0 0%, #8FA8C2 50%, #4F667D 100%) !important;
     backdrop-filter: blur(8px);
 }
-[data-testid="stToolbar"]{ background: transparent !important; }
+[data-testid="stToolbar"],
+[data-testid="stToolbarActions"],
+[data-testid="stMainMenu"],
+[data-testid="stAppDeployButton"],
+[data-testid="stDecoration"],
+#MainMenu,
+footer{ display: none !important; visibility: hidden !important; }
 header{ background: transparent !important; }
 [data-testid="stHeader"] *{ color: #000000 !important; }
 </style>
